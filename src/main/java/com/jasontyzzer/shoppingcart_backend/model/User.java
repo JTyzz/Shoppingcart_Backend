@@ -15,6 +15,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long userid;
+
     private String username, password, role, fullname, phonenumber, email, billingaddress, shippingaddress;
 
     @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "user")

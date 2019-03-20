@@ -10,7 +10,9 @@ import javax.persistence.*;
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long orderid, productid;
+    private long orderid;
+
+    private long productid;
     private String productname;
     private int quantity;
 

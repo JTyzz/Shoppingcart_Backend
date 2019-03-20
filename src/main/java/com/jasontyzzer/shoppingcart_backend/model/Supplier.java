@@ -12,6 +12,7 @@ public class Supplier {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long supplierid;
+
     private String suppliername, productname;
     private int quantity;
 
