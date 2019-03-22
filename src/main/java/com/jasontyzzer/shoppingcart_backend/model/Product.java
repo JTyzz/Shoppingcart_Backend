@@ -17,7 +17,6 @@ public class Product {
 
     private String productname, description;
     private double price;
-    private int quantity;
 
     @ManyToMany(mappedBy = "products")
     @JsonIgnoreProperties("products")
@@ -58,14 +57,6 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
     }
 
     public Set<Supplier> getSuppliers() {

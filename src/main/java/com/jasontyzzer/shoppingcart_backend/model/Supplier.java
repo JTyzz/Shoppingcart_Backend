@@ -13,7 +13,7 @@ public class Supplier {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long supplierid;
 
-    private String suppliername, productname;
+    private String suppliername;
     private int quantity;
 
     @ManyToMany
@@ -43,13 +43,6 @@ public class Supplier {
         this.suppliername = suppliername;
     }
 
-    public String getProductname() {
-        return productname;
-    }
-
-    public void setProductname(String productname) {
-        this.productname = productname;
-    }
 
     public int getQuantity() {
         return quantity;
